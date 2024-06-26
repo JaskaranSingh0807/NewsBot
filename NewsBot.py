@@ -1,10 +1,5 @@
 import requests
 import streamlit as st
-import pyttsx3
-engine = pyttsx3.init()
-def speak_news(news_text):
-    engine.say(news_text)
-    engine.runAndWait()
 # Function to fetch news based on category
 def fetch_news(category, api_key):
     if category == "Indian News":
